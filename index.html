@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7c948">
+  <meta name="description" content="Un pequeño detalle hecho con cariño.">
+  <title>Para ti 🌻</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loading" id="loading"><div class="loader-flower">🌻</div><p>Preparando algo para ti...</p></div>
+
+  <button class="music-btn" id="musicBtn" aria-label="Activar música">♪</button>
+  <audio id="music" loop preload="none">
+    <!-- Si agregas assets/cancion.mp3, descomenta la siguiente línea -->
+    <source src="assets/cancion.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="hero section">
+      <div class="sun"></div><div class="floating-petals" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">21 · 09 · 2026</p>
+        <h1>Tengo algo<br><span>para ti...</span></h1>
+        <p class="intro">No puedo darte flores en persona hoy, pero encontré otra forma. 🌻</p>
+        <button class="primary-btn" id="startBtn">Abrir mi regalo <span class="arrow">↓</span></button>
+      </div>
+      <div class="scroll-hint">desliza para continuar</div>
+    </section>
+
+    <section class="message section" id="mensaje">
+      <div class="container reveal">
+        <span class="section-number">01</span><p class="eyebrow">Un pequeño detalle</p>
+        <h2>Si estuvieras aquí,<br>te daría una flor.</h2>
+        <div class="divider"></div>
+        <p class="body-copy">Pero como hoy nos toca estar lejos, tuve que hacer un poquito de trampa y convertir algunas líneas de código en algo amarillo. 🌻</p>
+        <p class="body-copy soft">Quizá no sea lo mismo que recibir una flor en las manos, pero al menos quería que hoy tuvieras una.</p>
+      </div>
+    </section>
+
+    <section class="distance section">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="container reveal">
+        <span class="section-number light">02</span><p class="eyebrow light-text">Aunque estemos lejos</p>
+        <h2 class="light-text">La distancia no impide<br>que alguien esté presente.</h2>
+        <div class="orbit"><div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><div class="orbit-center">🌻</div></div>
+        <p class="body-copy light-text">Hay personas que aparecen en nuestra vida y, sin hacer demasiado ruido, terminan convirtiéndose en parte de nuestros días.</p>
+      </div>
+    </section>
+
+    <section class="little-things section">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-number">03</span><p class="eyebrow">Las pequeñas cosas</p>
+          <h2>También quería agradecerte<br>por los momentos simples.</h2>
+        </div>
+        <div class="cards">
+          <article class="memory-card reveal"><div class="card-icon">🎧</div><h3>Las llamadas</h3><p>Incluso esas en las que no hace falta decir demasiado.</p></article>
+          <article class="memory-card reveal"><div class="card-icon">🎮</div><h3>Los momentos</h3><p>Juegos, conversaciones, música y cualquier tontería compartida.</p></article>
+          <article class="memory-card reveal"><div class="card-icon">☁️</div><h3>La compañía</h3><p>A veces basta saber que hay alguien al otro lado.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="flowers section">
+      <div class="flower-field" aria-hidden="true"></div>
+      <div class="container reveal final-message">
+        <span class="section-number">04</span><p class="eyebrow">Para ti</p>
+        <h2>Hoy quería que<br>tuvieras flores.</h2>
+        <p class="body-copy">No sé si estas puedan competir con un ramo de verdad, pero cada una apareció aquí pensando en ti.</p>
+        <button class="flower-btn" id="flowerBtn">Hazlas florecer <span>🌱</span></button>
+      </div>
+      <div class="generated-flowers" id="generatedFlowers" aria-hidden="true"></div>
+    </section>
+
+    <section class="goodbye section">
+      <div class="container reveal">
+        <div class="big-flower">🌻</div>
+        <p class="eyebrow">Y una última cosa...</p>
+        <h2>Espero que algún día<br>pueda darte estas flores de verdad.</h2>
+        <div class="divider"></div>
+        <p class="signature">Con cariño,<br><strong>Yochi</strong> 🐮💙</p>
+        <button class="restart-btn" id="restartBtn">Volver a empezar ↺</button>
+      </div>
+    </section>
+  </main>
+  <div class="toast" id="toast">🌻 Una flor para ti</div>
+  <script src="script.js"></script>
+</body>
+</html>
